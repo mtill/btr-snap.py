@@ -40,10 +40,10 @@ optional arguments:
 
 Append to /etc/crontab:
 ```
-0 *     * * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task hourly
-0 2     * * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task daily
-30 2    * * 0   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task weekly
-0 3     1 * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task monthly
-30 3    1 1 *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task yearly
+0 *     * * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task hourly > /dev/null 2>&1
+0 2     * * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task daily > /dev/null 2>&1
+30 2    * * 0   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task weekly > /dev/null 2>&1
+0 3     1 * *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task monthly > /dev/null 2>&1
+30 3    1 1 *   root    /root/btr-snap.py/btr-snap.py --config /etc/btr-snap.conf --task yearly > /dev/null 2>&1
 ```
 
