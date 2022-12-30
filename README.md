@@ -1,9 +1,11 @@
 # btr-snap.py
-minimalist tool to create btrfs snapshots automatically
+Minimalist tool to create and prune btrfs snapshots automatically.
+Snapshots can be created hourly, weekly, monthly, yearly, etc.
+Older snapshots are pruned automatically based on the configured retention policy (e.g., snapshots older than 6 weeks, ...).
 
 ## usage
 ```
-usage: storybook [-h] [--config CONFIG] --task TASK [--dry_run]
+usage: btr-snap.py [-h] [--config CONFIG] --task TASK [--dry_run]
 
 optional arguments:
   -h, --help       show this help message and exit

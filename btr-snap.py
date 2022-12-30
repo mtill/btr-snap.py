@@ -52,7 +52,7 @@ def snappy(theconfigs, thetask, dry_run):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog='storybook')
+    parser = argparse.ArgumentParser(prog='btr-snap.py')
     parser.add_argument('--config', default='/etc/btr-snap.conf', help='path to config file')
     parser.add_argument('--task', required=True, help='task to execute (e.g., "hourly"/"monthly" etc.)')
     parser.add_argument('--dry_run', action='store_true', help='perform dry run')
