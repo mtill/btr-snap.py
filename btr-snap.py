@@ -26,7 +26,7 @@ def snappy(theconfigs, thetask, dry_run):
         if not snapDir.exists():
             print("   creating directory " + str(snapDir))
             if not dry_run:
-                snapDir.mkdir(mode=0o771)
+                snapDir.mkdir(mode=0o775)
 
         if preserve is not None:
             existingSnapshots = []
